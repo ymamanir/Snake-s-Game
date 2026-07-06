@@ -9,7 +9,7 @@ TAMANO_CELDA = 20
 class JuegoSerpiente:
     def __init__(self, ventana):
         self.ventana = ventana
-        self.ventana.title("Juego de la Serpiente")
+        self.ventana.title("Snake's Game")
         
         # Creando ventana para el juego
         self.canvas = tk.Canvas(
