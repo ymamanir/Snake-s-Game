@@ -80,14 +80,14 @@ class JuegoSerpiente:
         for y in range(ALTO_CELDAS):
             for x in range(ANCHO_CELDAS):
                 if y == 0 or y == ALTO_CELDAS - 1 or x == 0 or x == ANCHO_CELDAS - 1:
-                    self.dibujar_elemento([y, x], "blue", "pared")
+                    self.dibujar_elemento([y, x], "white", "pared")
 
         # Dibujar la comida 
         self.dibujar_elemento(self.comida, "red", "comida")
 
         # Dibujar la serpiente
         for parte in self.serpiente:
-            self.dibujar_elemento(parte, "green", "serpiente")
+            self.dibujar_elemento(parte, "blue", "serpiente")
 
     def actualizar_etiqueta(self):
         self.etiqueta_puntaje.config(text=f"Puntaje: {self.puntaje}")
